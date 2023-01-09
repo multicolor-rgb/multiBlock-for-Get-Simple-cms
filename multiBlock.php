@@ -20,7 +20,16 @@ register_plugin(
 );
 
 add_action( 'pages-sidebar', 'createSideMenu', [$thisfile, i18n_r('multiBlock/MULTIBLOCK').' 🧱', 'newmultiblock'] );
+
+
+
+$turnOneBlock = glob(GSDATAOTHERPATH.'oneBlock/*/*.json');
+if (count($turnOneBlock) > 0){
 add_action( 'pages-sidebar', 'createSideMenu', [$thisfile, 'OneBlock 🧱', 'newoneblock'] );
+};
+
+
+
 add_action( 'plugins-sidebar', 'createSideMenu', [$thisfile, i18n_r('multiBlock/MULTIBLOCKSETTINGS').' 🧱', 'category'] );
 
 # functions

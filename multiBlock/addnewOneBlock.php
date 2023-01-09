@@ -128,6 +128,7 @@
 <form method="post" >
 	<input type="text" style="display:none" value="<?php echo str_replace(" ","-",@$_GET['categoryname']);?>"  name="check">
 	<input type="text" required placeholder="<?php echo i18n_r("multiBlock/CATEGORYNAMEPLACEHOLDER");?>" class="mb_title" pattern="[A-Za-z0-9]+" name="categoryname" value="<?php echo str_replace('-',' ',@$_GET['categoryname']??'');?>">
+	<p style="font-size:12px;margin:5px 0;font-style:italic; padding:0;color:#444;">*name without spacebar required</p>
 
 	<hr>
 

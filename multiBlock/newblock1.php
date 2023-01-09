@@ -91,6 +91,7 @@
     <h4 style="margin-top:20px"><?php echo i18n_r("multiBlock/BLOCKTITLE"); ?></h4>
 
     <input type="text" required="required" name="name" class="namefile" placeholder="title" value="<?php echo str_replace("-", " ", @$_GET['namefile'] ?? ''); ?>" pattern="[A-Za-z0-9]+">
+    <p style="font-size:12px;margin:5px 0;font-style:italic; padding:0;color:#444;">*name without spacebar required</p>
 
     <hr>
 

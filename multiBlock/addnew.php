@@ -129,7 +129,10 @@
 
 <form method="post" >
 	<input type="text" style="display:none" value="<?php echo str_replace(" ","-",@$_GET['categoryname']);?>" name="check">
-	<input type="text" required placeholder="<?php echo i18n_r("multiBlock/CATEGORYNAMEPLACEHOLDER");?>" class="mb_title" name="categoryname" value="<?php echo str_replace('-',' ',@$_GET['categoryname']??'');?>"         pattern="[A-Za-z0-9]+">
+	<input type="text" required placeholder="<?php echo i18n_r("multiBlock/CATEGORYNAMEPLACEHOLDER");?>" class="mb_title" name="categoryname" value="<?php echo str_replace('-',' ',@$_GET['categoryname']??'');?>"        
+	 pattern="[A-Za-z0-9]+">
+
+	 <p style="font-size:12px;margin:5px 0;font-style:italic; padding:0;color:#444;">*name without spacebar required</p>
 
 	<br><hr><br>
 
@@ -203,9 +206,7 @@
 			;?>
 		</textarea><br><br>
 
-		<div style="width:100%;background:#fafafa;display:flex; justify-content:flex-end;padding:5px;box-sizing:border-box;border:solid 1px #ddd;margin-top:20px;">
-			<input type="submit"  name="savecat" class="mb_submit" value="<?php echo i18n_r("multiBlock/SAVECAT");?>">
-		</div>
+	
 		
 		<br><br>
 		
@@ -251,6 +252,10 @@
 		</div>
 		
 	</div>
+
+	<div style="width:100%;background:#fafafa;display:flex; justify-content:flex-end;padding:5px;box-sizing:border-box;border:solid 1px #ddd;margin-top:20px;">
+			<input type="submit"  name="savecat" class="mb_submit" value="<?php echo i18n_r("multiBlock/SAVECAT");?>">
+		</div>
 
 </form>
 

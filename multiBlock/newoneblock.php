@@ -112,10 +112,11 @@
 
 </form>
 
+
 <?php 
 	$folder = GSDATAOTHERPATH.'/multiBlockSettings/';
-	$fileDelete = $folder.'hideDelete.txt';
-	$fileAddNew = $folder.'hideAddNew.txt';
+	$fileDelete = $folder.'hideOneDelete.txt';
+	$fileAddNew = $folder.'hideOneAddNew.txt';
 	if(file_exists($fileDelete) && file_get_contents($fileDelete) == 'on'){
 		echo '<style>
 		.mb_edit{width:100px !important}
